@@ -1,103 +1,75 @@
-<!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <title>LOVT</title>
-    <link rel="stylesheet" href="estilos/style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
 
-
-<body>
+  <body>
     <header>
-        <div class="containerHeader">
-
-            <div class="logoHeader">
-                <h1 id="logoHeader">LOVT</h1>
-                <h2>You Love, <br>
-                    your loft!</h2>
-            </div>
-            
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Localização.html">Localização</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-                <button>☰</button>
-            </nav>
-           
-        </div>
+      <div class="logo">LOVT</div>
+      <div class="logo_phrase">Your Love, your loft!</div>
+      <div class="menu_btn">
+        <button>☰</button>
+      </div>
     </header>
-    <main>
-        <section class="banner">
-            <div class="container">
-                <div class="slide" style="background-image: url('img/carrossel.png')">#</div>
-                <div class="controls">
-                    <a href="#" title="anterior">
-                        <img src="img/btn_left.png" alt="anterior">
-                    </a>
-                    <a href="#" title="próximo">
-                        <img src="img/btn_right.png" alt="próximo">
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="projects">
-            <div class="container">
-                <article>
-                    <div class="thumb" style="background-image: url('img/loft01.png')">#</div>
-                    <div class="info">
-                        <div class="flex-between">
-                            <strong class="price">$ 1,200</strong>
-                            <span class="tag tag-green">New</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fugiat quis reprehenderit deserunt, laboriosam distinctio a obcaecati, molestiae consequuntur dolores atque sit illum pariatur suscipit totam praesentium placeat eos adipisci!</p>
-                    </div>
-                </article>
-                <article>
-                    <div class="thumb" style="background-image: url('img/loft02.png')">#</div>
-                    <div class="info">
-                        <div class="flex-between">
-                            <strong class="price">$ 2,000</strong>
-                            <span class="tag tag-orange">Sale</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, dolor quas nobis eveniet veritatis a excepturi quibusdam similique dignissimos rem labore odio blanditiis, quaerat consequatur voluptate? Reprehenderit, numquam. Magnam, ipsum.
-                        </p>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <section class="styles">
-            <div class="container">
-                <h2>Your Style</h2>
-                <article style="background-image: url('img/estilo_industrial.png');">
-                    <h3>Industrial</h3>
-                </article>
-                <article style="background-image: url('img/estilo_moderno.png');">
-                    <h3>Modern</h3>
-                </article>
-                <article style="background-image: url('img/estilo_classico.png');">
-                    <h3>Classic</h3>
-                </article>
-                
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d457.2500778884926!2d-46.772945!3d-23.53248!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x739f0ddb0439cf94!2sDigital%20House%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1636821089338!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="info">
-                <p>LOVT - You love, your loft!</p>
-                <p>Av. Domingos Odália Filho, 301 - Centro, Osasco - SP</p>
-                <p><a href="tel:+1973854555-548">+55 (11) 98765-4321</a></p>
-                <p><a href="mailto:contact@lovtrealstate.com">contato@lovt.com</a></p>
-            </div>
-        </div>
-    </footer>
-</body>
 
+    <main>
+      <section class="carrossel">
+        <img src="./img/carrossel.png" alt="carrossel">
+        <div class="carrossel_actions">
+          <button id="carrossel_btn_prev"><</button>
+          <button id="carrossel_btn_next">></button>
+        </div>
+      </section>
+
+    <section class="lofts">
+      <article>
+        <img src="./img/loft01.png" alt="loft 01">
+        <div class="price-n-btn">
+          <h3>$1,200</h3>
+          <div class="loft_btn_new">New</div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum obcaecati iusto fugit eveniet ea dolorem laborum eius, commodi debitis praesentium officiis soluta dolore velit.</p>
+      </article>
+
+      <article>
+        <img src="./img/loft02.png" alt="loft 02">
+        <div class="price-n-btn">
+          <h3>$2,000</h3>
+          <div class="loft_btn_sale">Sale</div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum obcaecati iusto fugit eveniet ea dolorem laborum eius, commodi debitis praesentium officiis soluta dolore velit.</p>
+      </article>
+    </section>
+
+    <section class="menu_styles">
+      <article class="style_titulo">Your Style</article>
+      <article class="style_industrial">Industrial</article>
+      <article class="style_modern">Modern</article>
+      <article class="style_classic">Classic</article>
+    </section>
+
+    </main>
+
+    <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.020232905356!2d-46.77475468502284!3d-23.531774684697627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceff11f211b73f%3A0x92ac0616a5aa30ec!2sAv.%20Domingos%20Od%C3%A1lia%20Filho%2C%20301%20-%20Centro%2C%20Osasco%20-%20SP%2C%2006010-067!5e0!3m2!1spt-BR!2sbr!4v1636932154872!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="informations">
+        <div class="footer_line">LOVT - Your love, your loft!</div>
+        <div class="footer_line">Av. Domingos Odália Filho, 301 - Centro, Osasco - SP</div>
+        <a href="tel:+55 (11) 98765-432">+55 (11) 98765-4321</a> <br>
+        <a href="mailto:contato@loveloft.com">contato@loveloft.com</a>
+        <section class="footer_line">OUR SOCIAL MEDIAS:</section>
+          <article>
+            <img src="./img/icon_ig.png" alt="Instagram icon">
+            <img src="./img/icon_fb.png" alt="Facebook icon">
+            <img src="./img/icon_wh.png" alt="Whatsapp icon">
+          </article>
+      </div>
+    </footer>
+  </body>
 </html>
